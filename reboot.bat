@@ -1,0 +1,2 @@
+:: Shutdown + reboot 
+shutdown /r
