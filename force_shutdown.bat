@@ -1,0 +1,2 @@
+:: Force shutdown
+shutdown /f
