@@ -27,13 +27,13 @@ if not exist "C:\PATH\BACKUP\Backup_6.bat" echo."C:\Program Files (x86)\PATH\PAT
 if not exist "C:\PATH\BACKUP\Backup_7.bat" echo."C:\Program Files (x86)\PATH\PATH\BIN\EXECUTABLE.exe" /q /o C:\PATH\backup\7>C:\PATH\BACKUP\Backup_7.bat
 
 :: CREATE SCHEDULED TASKS FOR EVERYDAY, ALSO CREATE SUNDAY REBOOT TASK
-schtasks /create /sc WEEKLY /tn "Backups\1.Monday Backup" /d MON /tr "C:\CCGH\BACKUP\Backup_1.bat" /st 23:00 /ru SYSTEM /rl HIGHEST & 
-schtasks /create /sc WEEKLY /tn "Backups\2.Tuesday Backup" /d TUE /tr "C:\CCGH\BACKUP\Backup_2.bat" /st 23:00 /ru SYSTEM /rl HIGHEST & 
-schtasks /create /sc WEEKLY /tn "Backups\3.Wednesday Backup" /d WED /tr "C:\CCGH\BACKUP\Backup_3.bat" /st 23:00 /ru SYSTEM /rl HIGHEST & 
-schtasks /create /sc WEEKLY /tn "Backups\4.Thursday Backup" /d THU /tr "C:\CCGH\BACKUP\Backup_4.bat" /st 23:00 /ru SYSTEM /rl HIGHEST & 
-schtasks /create /sc WEEKLY /tn "Backups\5.Friday Backup" /d FRI /tr "C:\CCGH\BACKUP\Backup_5.bat" /st 23:00 /ru SYSTEM /rl HIGHEST & 
-schtasks /create /sc WEEKLY /tn "Backups\6.Saturday Backup" /d SAT /tr "C:\CCGH\BACKUP\Backup_6.bat" /st 23:00 /ru SYSTEM /rl HIGHEST & 
-schtasks /create /sc WEEKLY /tn "Backups\7.Sunday Backup" /d SUN /tr "C:\CCGH\BACKUP\Backup_7.bat" /st 16:00 /ru SYSTEM /rl HIGHEST &
+schtasks /create /sc WEEKLY /tn "Backups\1.Monday Backup" /d MON /tr "C:\PATH\BACKUP\Backup_1.bat" /st 23:00 /ru SYSTEM /rl HIGHEST & 
+schtasks /create /sc WEEKLY /tn "Backups\2.Tuesday Backup" /d TUE /tr "C:\PATH\BACKUP\Backup_2.bat" /st 23:00 /ru SYSTEM /rl HIGHEST & 
+schtasks /create /sc WEEKLY /tn "Backups\3.Wednesday Backup" /d WED /tr "C:\PATH\BACKUP\Backup_3.bat" /st 23:00 /ru SYSTEM /rl HIGHEST & 
+schtasks /create /sc WEEKLY /tn "Backups\4.Thursday Backup" /d THU /tr "C:\PATH\BACKUP\Backup_4.bat" /st 23:00 /ru SYSTEM /rl HIGHEST & 
+schtasks /create /sc WEEKLY /tn "Backups\5.Friday Backup" /d FRI /tr "C:\PATH\BACKUP\Backup_5.bat" /st 23:00 /ru SYSTEM /rl HIGHEST & 
+schtasks /create /sc WEEKLY /tn "Backups\6.Saturday Backup" /d SAT /tr "C:\PATH\BACKUP\Backup_6.bat" /st 23:00 /ru SYSTEM /rl HIGHEST & 
+schtasks /create /sc WEEKLY /tn "Backups\7.Sunday Backup" /d SUN /tr "C:\PATH\BACKUP\Backup_7.bat" /st 16:00 /ru SYSTEM /rl HIGHEST &
 schtasks /create /sc WEEKLY /tn "Backups\Sunday Server Reboot" /d SUN /tr "shutdown /r" /st 17:00 /ru SYSTEM /rl HIGHEST &
 
 :: ASK IF  WANT TO CREATE GPS TASKS
